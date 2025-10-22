@@ -1,0 +1,77 @@
+/* Styles All */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  transition: background 0.4s, color 0.4s;
+}
+
+.form-card {
+  background-color: #ffffff;
+  max-width: 500px;
+  transition: background 0.4s, color 0.4s, transform 0.3s ease;
+}
+
+.form-card:hover {
+  transform: translateY(-5px);
+}
+
+#send-btn {
+  background-color: #0d6efd;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+#send-btn:hover {
+  background-color: #0d5ed7;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #aaaa;
+  color: #e0e0e0;
+}
+
+body.dark-mode .form-card {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-mode .form-control {
+  background-color: #cccc;
+  color: #121212;
+  border-color: #444;
+}
+
+body.dark-mode .form-control:focus {
+  background-color: #0d6efd;
+  box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+}
+
+body.dark-mode .btn-primary {
+  background-color: #0d6efd;
+  color: #e0e0e0;
+}
+
+body.dark-mode .btn-outline-secondary {
+  color: #e0e0e0;
+  border-color: #e0e0e0;
+}
+
+body.dark-mode .btn-outline-secondary:hover {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .form-card {
+    padding: 20px;
+  }
+}
